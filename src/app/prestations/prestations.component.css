@@ -1,0 +1,325 @@
+.message{
+    width: 85%;
+    background-color: var(--lightGreen);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    color: var(--white);
+    font-family: var(--ralewayRegu) !important;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 25px auto 75px auto;
+    font-size: 24px;
+}
+
+.message img{
+    position: absolute;
+    right: -10px;
+    top: -30px;
+    opacity: 0.40;
+    width: 50px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+}
+
+.separation{
+    margin-top: 100px !important;
+}
+
+.prestaPrivate{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.prestaPrivate .right{
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.prestaPrivate .left{
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.prestaPrivate .text{
+    text-align: justify;
+    line-height: 200%;
+    color: var(--darkGreen);
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.prestaPrivate .text p{
+    font-family: var(--ralewayRegu);
+}
+
+.prestaPrivate .text h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.containerItem{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.containerItem .item{
+    flex: 0 0 50%;
+}
+
+.containerItem .item p{
+    font-size: 35px;
+    line-height: 200%;
+    color: var(--darkGreen);
+}
+
+.containerItem .item img{
+    height: 75px;
+    margin-bottom: 15px;
+}
+
+.main img{
+    width: 400px;
+}
+
+.second img{
+    width: 300px;
+}
+
+.containerConfiance{
+    background: #B3C9A7;
+    text-align: center;
+    color: var(--white);
+}
+
+.containerConfiance h2{
+    font-size: 60px;
+    line-height: 200%;
+    letter-spacing: 1px;
+    margin-top: 50px !important;
+}
+
+/***
+  Slider
+***/
+.containerCarousel{
+  padding: 10px 25px;
+  width: 75%;
+  margin: auto;
+  position: relative;
+  color: var(--darkGreen);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carousel{
+  font-size: 20px;
+  flex-direction: row;
+  justify-content:center;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.carousel .element{
+  width: 400px;
+  display: flex;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 75px;
+}
+
+.carousel .element .name{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.yellow{
+  color: #F1C644;
+}
+
+.white{
+}
+
+.carousel .element .name p{
+  font-weight: 800;
+}
+
+.carousel .element p{
+  font-family: var(--ralewayRegu) !important;
+  text-align: justify !important;
+}
+
+.arrowLeft{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 2;
+  color: var(--darkGreen);
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.arrowRight{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 2;
+  color: var(--darkGreen);
+  font-size: 38px;
+  cursor: pointer;
+}
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    height: 100px;
+    padding: 25px auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(400px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    font-size:30px;
+    font-family: var(--ralewayRegu);
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media all and (max-width: 1550px) {
+  
+  .containerCarousel{
+    width: 95%;
+
+  }
+}
+
+@media all and (max-width: 900px) {
+    .prestaPrivate{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .separation{
+        flex-direction: column-reverse;
+    }
+
+    .main img{
+        width: 300px;
+    }
+    
+    .second img{
+        width: 200px;
+    }
+
+    .prestaPrivate .text h2{
+        text-align: center;
+    }
+
+    .containerConfiance h2{
+      font-size: 30px;
+      width: 95%;
+      margin: auto;
+  }
+
+  .containerCarousel{
+    width: 95%;
+
+  }
+}
+
+@media all and (max-width: 600px) {
+    .message img{
+        position: absolute;
+        right: -10px;
+        top: 0px;
+        opacity: 0.50;
+    }
+
+    .prestaPrivate .text{
+        font-size: 18px;
+    }
+    
+    .prestaPrivate .text h2{
+        font-size: 25px;
+    }
+
+    .containerItem .item p{
+        font-size: 25px;
+    }
+    
+    .containerItem .item img{
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    /***
+      Slider
+    ***/
+    .containerCarousel{
+      padding: 5px 15px;
+      width: 95%;
+      overflow: hidden;
+    }
+    .carousel{
+      font-size: 16px;
+    }
+
+    .carousel .element{
+      width: initial;
+      margin: 25px;
+    }
+
+    .carousel .element .name{
+      align-items: center;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .prestaPrivate{
+        width: 95%;
+    }
+
+    .main img{
+        width: 250px;
+    }
+    
+    .second img{
+        width: 250px;
+    }
+
+    .message img{
+        display: none;
+    }
+}

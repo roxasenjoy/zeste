@@ -1,0 +1,20 @@
+p{
+    background-color: #DFAC8D;
+    margin: initial;
+    text-align: center;
+    color: var(--white);
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+p a{
+    color: var(--white);
+}
+
+@media all and (max-width: 400px) {   
+    p{
+        font-size: 16px;
+
+    }
+}

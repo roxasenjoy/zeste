@@ -1,0 +1,550 @@
+
+
+.presentation{
+    width: 75%;
+    margin: 0 auto 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+
+#presentationFeuillage{
+    position: absolute;
+    opacity: 0.15;
+    right: -0px;
+    top: 700px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;   
+}
+
+#presentationFeuillage img{
+    -ms-transform: rotate(-40deg); /* IE 9 */
+    transform: rotate(-40deg);
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+}
+
+#profilImg{
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.description .topLeft{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.description .bottomRight{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.description i{
+    color: var(--lightGreen);
+    font-size: 50px;
+}
+
+.description p{
+    font-family: var(--ralewayRegu);
+    text-align: left;
+    line-height: 175%;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: var(--darkGreen);
+}
+
+/**
+    Mes valeurs
+**/
+
+.valeurs{
+    width: 75%;
+    margin: 0 auto 100px auto;
+    justify-content:space-between; ;
+    align-items: center;
+    background: var(--lightGreen);
+    color: var(--white);
+    display: flex;
+    padding: 40px 60px;
+    border-radius: 10px;
+}
+
+.valeurs .element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.valeurs .element p{
+    font-size: 50px;
+}
+
+.valeurs .title p{
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.valeurs .title hr{
+    background-color: var(--white);
+    color: var(--white);
+    height: 2px;
+    border: none;   
+}
+
+.valeurs .element img{
+    width: 200px;
+    object-fit:cover;
+}
+
+.valeurs .element:nth-child(2) img{
+    transform: rotate(-45deg);
+    width: 150px;
+    padding-bottom: 60px;
+}
+
+.valeurs .element:nth-child(3) img
+{
+    transform: rotate(-45deg);
+    width:100px;
+    object-fit:cover;
+}
+
+.valeurs .element:nth-child(4) img{
+    padding-bottom: 60px;
+}
+
+.valeurs .element:nth-child(5) img{
+    padding-bottom: 100px;
+}
+
+/**
+    Prestations
+**/
+.prestations{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+    margin-bottom: 50px;
+}
+
+.prestations .element{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feuillageVertical{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: -50px;
+    right: 0;
+    top: 0;
+    width: 192px;
+}
+
+.prestations .left{
+    width: 100%;
+    padding: 100px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0, 0.3),
+        rgba(0,0,0, .3)
+      ),url('/assets/img/prestations/right.jpg'); 
+    background-size: cover;
+    height: 700px;
+}
+
+.prestations .right{
+    width: 100%;
+    padding: 100px 0;
+    background-image:linear-gradient(
+        to bottom,
+        rgba(0,0,0, 0.3),
+        rgba(0,0,0, .3)
+      ), url('/assets/img/prestations/left.JPG');   
+    background-size: cover;
+    height: 700px;
+}
+
+.prestations .element p{
+    font-size: 100px;
+    line-height: 100%;
+    margin-bottom: 25px;
+}
+
+.listElement{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    padding-left: 0px !important;
+}
+
+.listElement li{
+    margin: 0 20px;
+    font-size: 45px;
+}
+
+.discover{
+    background: var(--lightGreen);
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-family: var(--ralewayRegu);
+    font-size: 25px;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.discover:hover{
+    background-color: var(--darkGreen);
+}
+
+/********
+    Card slider
+**********/
+.containerCarousel{
+    padding: 10px 25px;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    color: var(--darkGreen);
+    overflow: hidden ;
+}
+.carousel{
+    font-size: 24px;
+    flex-direction: row;
+    justify-content:space-around;
+    display: inline-flex;
+}
+
+.carousel .element{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .element img{
+    height: 75%;
+}
+
+.carousel .element:nth-child(n2){
+    background-color: red;
+}
+
+.arrowLeft{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+    color: var(--darkGreen);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.arrowRight{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 2;
+    color: var(--darkGreen);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+/*************/
+
+/*****
+    Ou trouver Zeste ?
+******/
+.where{
+    background: #B3C9A7;
+}
+
+.containerWhere{
+    display: flex;
+    padding: 20px;
+}
+
+.map{
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map img{
+    margin-bottom: 25px;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    color: var(--white);
+    text-align: right;
+    font-size: 25px;
+    line-height: 125%;
+}
+
+.socialMedia a{font-size: 55px; color: var(--white); padding: 15px;}
+
+.map #text{
+    color: var(--white);
+    width:70%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+    line-height: 125%;
+}
+
+
+/****/
+.place{
+    flex: 0 0 50%;
+    color: var(--white);
+}
+
+.place #title{
+    font-size: 65px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.place .containerDate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.place .containerDate .element{
+    flex: 0 0 40%;
+    margin: 20px 20px;
+    height: 175px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: 40px;
+    border: var(--white) 1px solid;  
+}
+
+/**************/
+
+@media all and (max-width: 1100px) {
+    .valeurs{
+        width: 85%;
+        display: flex;
+        padding: 20px 30px;
+        justify-content:space-between; ;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 50%;
+        flex-direction: column;
+    }
+
+    .valeurs .title{
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .valeurs .element:nth-child(2) img{
+        transform: rotate(-45deg);
+    }
+    
+    .valeurs .element:nth-child(3) img
+    {
+        transform: rotate(-45deg);
+    }
+    
+    .valeurs .element img{
+        padding-bottom: 0px !important;
+    }
+
+
+    .prestations .element p{
+        font-size: 50px;
+    }
+
+    .listElement li{
+        margin: 0 10px;
+        font-size: 35px;
+    }
+
+    .listElement{
+        flex-direction: column;
+        display: inherit;
+    }
+
+    .prestations .left{
+        height: 650px;
+    }
+    
+    .prestations .right{
+        height: 650px;
+    }
+
+    .feuillageVertical{
+        width: 167px;
+    }
+
+
+    .containerWhere{
+        flex-direction: column;
+    }
+    .map{
+        flex: 0 0 100%;
+    }
+    .place{
+        flex: 0 0 100%;
+    }
+
+}
+
+@media all and (max-width: 900px) {
+    .presentation{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    #presentationFeuillage{
+        top: 800px; 
+    }
+
+    .description p{
+        letter-spacing: 2px;
+        font-size:16px;
+    }
+
+    .description .topLeft{
+        margin-bottom:10px;
+    }
+    
+    .description .bottomRight{
+        margin-top: 10px;
+    }
+
+    #profilImg{
+        margin-right: 0px;
+    }
+
+   
+}
+
+@media all and (max-width: 900px) {
+    #presentationFeuillage{
+        top: 950px; 
+    }
+}
+
+@media all and (max-width: 900px) {
+    .valeurs{
+        width: 75%;
+    }
+}
+
+@media all and (max-width: 600px) {   
+    .prestations{
+        flex-direction: column;
+    }
+
+    .feuillageVertical{
+        position: absolute;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 2.75%;
+        margin: auto;
+        width: 25%;
+    }
+
+    .listElement{
+        margin-top: 50px;
+    }
+
+    .map img{
+        width: 75%;
+    }
+
+    .socialMedia{
+        justify-content: center;
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialMedia .contact{
+        margin-top: 15px;
+    }
+
+    .map #text{
+        font-size: 25px;
+    }
+    
+    .place #title{
+        font-size: 35px;
+    }
+
+    .place .containerDate .element{
+        flex: 0 0 100%;
+        margin: 10px 10px;
+        height: 100%;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .place .containerDate .element p{
+        margin: auto;
+    }
+
+    .containerCarousel{
+        width: 95%;
+    }
+
+    .containerCarousel .element{
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
+@media all and (max-width: 400px) {   
+    .feuillageVertical{
+        bottom: 1.75% !important;
+    }
+}
+

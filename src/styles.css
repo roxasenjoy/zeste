@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: 'Sue Ellen Francisco';
+    src: url('assets/fonts/sue/Sue Ellen Francisco.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('assets/fonts/raleway/Raleway-Regular.ttf');
+}
+
+:root{
+    --white: #F6F9F4;
+    --lightGreen: #B9CEAD;
+    --darkGreen: #657E56;
+    --lightOrange: #D98560;
+    --mediumOrange: #DFAC8D;
+    --darkOrange: #B18062;
+    --sue: 'Sue Ellen Francisco';
+    --ralewayRegu: 'Raleway Regular';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+    font-family: var(--sue);
+}
+
+.transition{
+    transition: 0.5s ease-in-out;
+}
+
+.cancelAutoDesign{
+    margin: initial !important;
+    padding: initial !important;
+}
+
+/**
+ Slider
+**/
+.slick-slider {
+    width: 88%;
+    margin: auto;
+    background: rgb(14, 13, 13);
+  }
+  
+body .slick-prev, 
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: grey !important;
+    z-index: 100;
+}

@@ -1,0 +1,178 @@
+<app-header></app-header>
+
+
+<!-- Présentation de Manon -->
+
+<div id="presentationFeuillage" class="transition">
+    <img src="assets/img/decoration/feuillage.png" alt="Décoration feuillage">
+</div>
+
+<section class="presentation transition">
+    <img id="profilImg" src="assets/img/manon.jpg" >
+    <div class="description">
+        <i class="fa-solid fa-quote-left topLeft"></i>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat augue est, et pellentesque quam feugiat eget. Mauris id volutpat lectus. Donec placerat quam at congue elementum. Donec nec bibendum nisl. Fusce fringilla id urna ac congue. Donec eleifend nec diam a varius. Duis aliquam, ante vitae dictum consectetur.</p>
+        <i class="fa-solid fa-quote-right bottomRight"></i>
+    </div>
+</section>
+
+
+<!-- Les valeurs -->
+<section class="valeurs transition">
+        <div class="title">
+            <p>Mes valeurs</p>
+        </div>
+   
+        <div class="element transition">
+            <img src="assets/img/valeurs/Betterave blanc.png" alt="">
+            <p> Valeur</p>
+        </div>
+        <div class="element transition">
+            <img src="assets/img/valeurs/Carotte blanc.png" alt="">
+            <p> Valeur</p>
+        </div>
+        <div class="element transition">
+            <img src="assets/img/valeurs/Citrouille blanc.png" alt="">
+            <p> Valeur</p>
+        </div>
+        <div class="element transition">
+            <img src="assets/img/valeurs/Salade blanc.png" alt="">
+            <p> Valeur</p>
+        </div>
+</section>
+
+<!-- Prestations -->
+
+<section class="prestations">
+
+    <div class="left element">
+        <p class="transition">Prestations <br>privées</p>
+        
+        <ul class="listElement transition">
+            <li>TRAITEUR</li>
+            <li>FOODTRUCK</li>
+            <li>BRUNCH</li>
+        </ul>
+
+        <a href="#" class="discover transition"> Découvrir </a>
+    </div>
+
+    
+    <div class="right element">
+        <img src="assets/img/prestations/feuillage vertical.png" alt="" class="feuillageVertical">
+
+        <p class="transition">Prestations <br>professionnelles</p>
+
+        
+        <ul class="listElement transition">
+            <li>FOODTRUCK</li>
+            <li>PLATEAUX REPAS</li>
+            <li>CATERING</li>
+        </ul>
+
+        <a href="#" class="discover transition"> Découvrir </a>
+    </div>
+
+</section>
+
+<!-- Partenaires -->
+<div class="containerCarousel">
+
+    <div class="arrowLeft" id="arrowLeft" >
+        <i class="fa-solid fa-chevron-left" (click)="left()"></i>
+    </div>
+
+    <div class="carousel transition" id="carousel">
+        <div class="element">
+            <img src="assets/img/slider/element1.png" alt="">
+            <p class="name"> PRENOM NOM</p>
+            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        </div>
+        <div class="element">
+            <img src="assets/img/slider/element1.png" alt="">
+            <p class="name"> PRENOM NOM</p>
+            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        </div>
+        <div class="element">
+            <img src="assets/img/slider/element1.png" alt="">
+            <p class="name"> PRENOM NOM</p>
+            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        </div>
+        <div class="element">
+            <img src="assets/img/slider/element1.png" alt="">
+            <p class="name"> PRENOM NOM</p>
+            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        </div>
+        <div class="element">
+            <img src="assets/img/slider/element1.png" alt="">
+            <p class="name"> PRENOM NOM</p>
+            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        </div>
+        <div class="element">
+            <img src="assets/img/slider/element1.png" alt="">
+            <p class="name"> PRENOM NOM</p>
+            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        </div>
+    </div>
+
+    <div class="arrowRight" id="arrowRight">
+        <i class="fa-solid fa-chevron-right" (click)="right()"></i>
+    </div>   
+</div>
+
+<!-- Ou trouver Zeste -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#B3C9A7" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,202.7C384,224,480,256,576,250.7C672,245,768,203,864,192C960,181,1056,203,1152,224C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+<section class="where">
+    <div class="containerWhere">
+
+        <div class="map">
+            <img src="assets/img/where/calvados.png" alt="">
+            <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis venenatis eros, placerat porta nulla vulputate vel. Nam vel tincidunt felis, at tincidunt massa.</p>
+
+            <div class="socialMedia">
+                <div class="social">
+                    <a href="https://www.instagram.com/zestecuisine/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/zestecuisine"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="contact">
+                    <p>contact@zestecuisine.fr</p>
+                    <p> 06 06 06 06 06</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="place">
+
+            <p id="title">Où trouver Zeste ?</p>
+            <div class="containerDate">
+                <div class="element">
+                    <p> Lieu / Date </p>
+                </div>
+                <div class="element">
+                    <p> Lieu / Date </p>
+                </div>
+                <div class="element">
+                    <p> Lieu / Date </p>
+                </div>
+                <div class="element">
+                    <p> Lieu / Date </p>
+                </div>
+                <div class="element">
+                    <p> Lieu / Date </p>
+                </div>
+                <div class="element">
+                    <p> Lieu / Date </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<svg style="transform: rotate(180deg)" viewBox="0 0 1440 320"><path fill="#B3C9A7" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,202.7C384,224,480,256,576,250.7C672,245,768,203,864,192C960,181,1056,203,1152,224C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+<app-footer></app-footer>
