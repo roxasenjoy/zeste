@@ -1,12 +1,13 @@
+
 <header class="header transition" [ngStyle]="{'background-image' : background}">
 
     <!-- Desktop -->
     <nav class="navigation">
         <img src="assets/img/logo_vert.png" alt="Logo Zeste cuisine du jardin" class="transition">
         <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/prestations">Prestations</a></li>
-            <li><a href="/la-tete-et-les-mains">La tête et les mains</a></li>
+            <li><a routerLink="/" routerLinkActive="active">Accueil</a></li>
+            <li><a routerLink="/prestations" routerLinkActive="active">Prestations</a></li>
+            <li><a routerLink="/lateteetlesmains" routerLinkActive="active">La tête et les mains</a></li>
         </ul>
     </nav>
 
@@ -30,9 +31,9 @@
     </div>
     <nav class="nav" id="nav">
         <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/prestations">Prestations</a></li>
-            <li><a href="/la-tete-et-les-mains">La tête et les mains</a></li>
+            <li><a routerLink="/" routerLinkActive="active">Accueil</a></li>
+            <li><a routerLink="/prestations" routerLinkActive="active">Prestations</a></li>
+            <li><a routerLink="/lateteetlesmains" routerLinkActive="active">La tête et les mains</a></li>
         </ul>
     </nav> 
 

@@ -1,0 +1,268 @@
+.prestaPrivate{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.prestaPrivate .text{
+    flex: 0 0 70%;
+    text-align: left;
+}
+
+.prestaPrivate .image{
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.leftText{
+    padding-left: 100px;
+}
+
+.rightText{
+    padding-right: 100px;
+}
+
+.separation{
+    margin: 50px auto;
+}
+
+.prestaPrivate .image img{
+    width: 400px;
+}
+
+.gouter{
+    background: #B3C9A7;
+    color: #FDFDFD;
+    padding: 10px 40px;
+    font-family: var(--ralewayRegu);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.gouter:hover{
+    background: var(--darkGreen);
+}
+
+.prestaPrivate .text{
+    text-align: left;
+    line-height: 200%;
+    color: var(--darkGreen);
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.prestaPrivate .text p{
+    font-family: var(--ralewayRegu);
+}
+
+.prestaPrivate .text h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/**
+    Mes valeurs
+**/
+
+.containerValeurs{
+    background-color: #B3C9A7;
+    color: #FDFDFD;
+    position: relative;
+}
+
+.containerValeurs .elements{
+    width: 75%;
+    margin: auto;
+}
+
+.containerListeValeurs{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.valeurList{
+    flex: 1 0 25%;
+    text-align: center;
+    margin: 25px;
+}
+
+.elements h2{
+    font-size: 60px;
+}
+
+.valeurList h3{
+    margin: 25px 0;
+}
+
+.valeurList p{
+    font-size: 20px;
+    font-family: var(--ralewayRegu);
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+.valeurList img{
+    height: 150px;
+    object-fit: cover;
+}
+
+.askDevis{
+    background: var(--white);
+    color: var(--darkGreen);
+    font-size: 25px;
+    font-family: var(--ralewayRegu);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 20px 35px;
+    text-align: center;
+    margin: auto;
+    z-index: 999;
+    position: relative;
+}
+
+.askDevis:hover{
+    background: var(--darkGreen);
+    color: var(--white);
+}
+
+/**
+Deco
+**/
+
+.feuillageVertical{
+    position: absolute;
+    left: -100px;
+    opacity: 0.25;
+}
+
+.feuillageVertical img{
+    height: 100%;
+    width: 250px;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+.presentationFeuillageRight{
+    position: absolute;
+    opacity: 0.15;
+    right: -0px;
+    top: 700px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;   
+}
+
+.presentationFeuillageLeft{
+    position: absolute;
+    opacity: 0.15;
+    left: -100px;
+    top: 1700px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;   
+}
+
+.presentationFeuillageRight img{
+    -ms-transform: rotate(-40deg); /* IE 9 */
+    transform: rotate(-40deg);
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+}
+
+.presentationFeuillageLeft img{
+    -ms-transform: rotate(40deg); /* IE 9 */
+    transform: rotate(40deg);
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+}
+
+.footer{
+    text-align: center;
+    color: var(--darkGreen);
+    font-size: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+.footer a{
+    color: var(--darkGreen);
+   
+}
+
+@media all and (max-width: 900px) {
+    .presentationFeuillageRight{
+        top: 950px; 
+    }
+
+    .prestaPrivate{
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .prestaPrivate.second{
+        flex-direction: column-reverse;
+    }
+
+    .prestaPrivate .image img{width: 200px;}
+
+    .rightText{
+        padding: initial;
+    }
+
+    .leftText{
+        padding: initial;
+    }
+
+    .elements h2{
+        font-size: 40px;
+    }
+
+    .prestaPrivate .text{
+        font-size: 16px;
+    }
+
+    .prestaPrivate .text h2{
+        font-size: 30px;
+    }
+
+    .secondImage{
+        margin-top: 50px;
+    }
+
+    #gouterBtn{
+        text-align: center;
+    }
+
+    .valeurList{
+        flex: 1 0 45%;
+        text-align: center;
+        margin: 25px;
+    }
+
+    .valeurList h3{
+        margin: 15px 0;
+    }
+    
+    .valeurList p{
+        font-size: 16px;
+        font-family: var(--ralewayRegu);
+        line-height: 150%;
+        letter-spacing: 1px;
+    }
+
+    .askDevis{
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+}

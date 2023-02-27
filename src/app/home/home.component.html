@@ -11,7 +11,12 @@
     <img id="profilImg" src="assets/img/manon.jpg" >
     <div class="description">
         <i class="fa-solid fa-quote-left topLeft"></i>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat augue est, et pellentesque quam feugiat eget. Mauris id volutpat lectus. Donec placerat quam at congue elementum. Donec nec bibendum nisl. Fusce fringilla id urna ac congue. Donec eleifend nec diam a varius. Duis aliquam, ante vitae dictum consectetur.</p>
+        <p>"Cuisiner au rythme des saisons avec des produits normands est en même temps une contrainte 
+            et un grand plaisir qui agite ma créativité. J’aime éveiller la curiosité et faire plaisir avec
+             une cuisine qui régale tous les sens, gourmande, créative et colorée et qui respecte le vivant 
+             et l’environnement", Manon
+            
+            </p>
         <i class="fa-solid fa-quote-right bottomRight"></i>
     </div>
 </section>
@@ -19,7 +24,9 @@
 
 <!-- Les valeurs -->
 <section class="valeurs transition">
-        <div class="title">
+
+        <p>Cuisine végétarienne, de saison, locale, majoritairement bio et en circuit court, entièrement faite maison et avec ♡</p>
+        <!-- <div class="title">
             <p>Mes valeurs</p>
         </div>
    
@@ -38,7 +45,7 @@
         <div class="element transition">
             <img src="assets/img/valeurs/Salade blanc.png" alt="">
             <p> Valeur</p>
-        </div>
+        </div> -->
 </section>
 
 <!-- Prestations -->
@@ -54,7 +61,7 @@
             <li>BRUNCH</li>
         </ul>
 
-        <a href="#" class="discover transition"> Découvrir </a>
+        <a routerLink="/prestations" class="discover transition"> Découvrir </a>
     </div>
 
     
@@ -67,10 +74,10 @@
         <ul class="listElement transition">
             <li>FOODTRUCK</li>
             <li>PLATEAUX REPAS</li>
-            <li>CATERING</li>
+            <li>COCKTAIL</li>
         </ul>
 
-        <a href="#" class="discover transition"> Découvrir </a>
+        <a routerLink="/prestations" class="discover transition"> Découvrir </a>
     </div>
 
 </section>
@@ -83,36 +90,79 @@
     </div>
 
     <div class="carousel transition" id="carousel">
-        <div class="element">
-            <img src="assets/img/slider/element1.png" alt="">
-            <p class="name"> PRENOM NOM</p>
-            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        <div class="element" [hidden]="reviewPage !== 0">
+            <img src="assets/img/producteurs/1.png" alt="">
+            <a target="_blank"href="https://www.facebook.com/cocotteNco/">
+                <p class="name"> Cocotte & co </p>
+                <p class="job"> Oeufs </p>
+            </a>
         </div>
-        <div class="element">
-            <img src="assets/img/slider/element1.png" alt="">
-            <p class="name"> PRENOM NOM</p>
-            <p class="job"> TRAVAIL EFFECTUÉ </p>
+
+        <div class="element" [hidden]="reviewPage !== 0">
+            <img src="assets/img/producteurs/5.png" alt="" >
+            <a target="_blank" href=" https://www.facebook.com/lecoeurdeschamps/">
+                <p class="name"> Le Cœur des Champs </p>
+                <p class="job"> lentilles pois chiches quinoa </p>
+            </a>
         </div>
-        <div class="element">
-            <img src="assets/img/slider/element1.png" alt="">
-            <p class="name"> PRENOM NOM</p>
-            <p class="job"> TRAVAIL EFFECTUÉ </p>
+
+        <div class="element" [hidden]="reviewPage !== 0">
+            <img src="assets/img/producteurs/6.png" alt="">
+            <a target="_blank" href="https://lescerisesducafe.com/">
+                <p class="name"> Les Cerises du Café </p>
+                <p class="job"> Café </p>
+            </a>
         </div>
-        <div class="element">
-            <img src="assets/img/slider/element1.png" alt="">
-            <p class="name"> PRENOM NOM</p>
-            <p class="job"> TRAVAIL EFFECTUÉ </p>
+
+        <div class="element" [hidden]="reviewPage !== 1">
+            <img src="assets/img/producteurs/7.png" alt="">
+            <a target="_blank" href="https://www.lafalue.fr/">
+                <p class="name"> Scop La Falue </p>
+                <p class="job"> Pains & Viennoiseries </p>
+            </a>
         </div>
-        <div class="element">
-            <img src="assets/img/slider/element1.png" alt="">
-            <p class="name"> PRENOM NOM</p>
-            <p class="job"> TRAVAIL EFFECTUÉ </p>
+
+        <div class="element" [hidden]="reviewPage !== 1">
+            <img src="assets/img/producteurs/8.png" alt="">
+            <a target="_blank" href="https://lesvergersdeducy.fr/">
+                <p class="name"> Les Vergers de Ducy </p>
+                <p class="job"> vinaigre de cidre jus de pomme </p>
+            </a>
         </div>
-        <div class="element">
-            <img src="assets/img/slider/element1.png" alt="">
-            <p class="name"> PRENOM NOM</p>
-            <p class="job"> TRAVAIL EFFECTUÉ </p>
+        <div class="element" [hidden]="reviewPage !== 1">
+            <img src="assets/img/producteurs/2.png" alt="" >
+            <a target="_blank" href="https://ferme-de-la-touche.fr/les-farines-de-la-touche">
+                <p class="name"> Farine de la Touche </p>
+                <p class="job"> farines </p>
+            </a>
         </div>
+
+        <div class="element" [hidden]="reviewPage !== 2">
+            <img src="assets/img/producteurs/4.png" alt="">
+            <a target="_blank" href="https://www.facebook.com/lesjardinsdeskami/">
+                <p class="name"> Jardins des Kami </p>
+                <p class="job"> Légumes </p>
+            </a>
+        </div>
+
+        <div class="element" [hidden]="reviewPage !== 2">
+            <img src="assets/img/producteurs/3.png" alt="">
+            <a target="_blank" href="https://www.lafermedelamoissonniere.fr/">
+                <p class="name"> Ferme de la Moissonnière </p>
+                <p class="job"> huile de colza </p>
+            </a>
+        </div>
+
+        <div class="element" [hidden]="reviewPage !== 2">
+            <img src="assets/img/producteurs/5.png" alt="">
+            <a target="_blank" href="https://www.facebook.com/lapetitefermedesbeliers/">
+                <p class="name"> Petite ferme des béliers</p>
+                <p class="job"> légumes petits fruits </p>
+            </a>
+        </div>
+
+
+
     </div>
 
     <div class="arrowRight" id="arrowRight">
@@ -129,50 +179,27 @@
 
         <div class="map">
             <img src="assets/img/where/calvados.png" alt="">
-            <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis venenatis eros, placerat porta nulla vulputate vel. Nam vel tincidunt felis, at tincidunt massa.</p>
+            <p id="text">Découvrez mes créations sur Instagram et Facebook et n’hésitez pas à me contacter pour vos projets gourmands et responsables en Normandie.</p>
 
             <div class="socialMedia">
                 <div class="social">
-                    <a href="https://www.instagram.com/zestecuisine/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/zestecuisine"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zestecuisine/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/zestecuisine" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 </div>
                 <div class="contact">
                     <p>contact@zestecuisine.fr</p>
-                    <p> 06 06 06 06 06</p>
+                    <p> 06 03 77 94 32 </p>
                 </div>
             </div>
         </div>
-
-
-        <div class="place">
-
-            <p id="title">Où trouver Zeste ?</p>
-            <div class="containerDate">
-                <div class="element">
-                    <p> Lieu / Date </p>
-                </div>
-                <div class="element">
-                    <p> Lieu / Date </p>
-                </div>
-                <div class="element">
-                    <p> Lieu / Date </p>
-                </div>
-                <div class="element">
-                    <p> Lieu / Date </p>
-                </div>
-                <div class="element">
-                    <p> Lieu / Date </p>
-                </div>
-                <div class="element">
-                    <p> Lieu / Date </p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
 
 <svg style="transform: rotate(180deg)" viewBox="0 0 1440 320"><path fill="#B3C9A7" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,202.7C384,224,480,256,576,250.7C672,245,768,203,864,192C960,181,1056,203,1152,224C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
+<section class="instagram" style="margin: auto; width: 75%;">
+    
+    <div class="elfsight-app-472766c0-34c1-4df3-b490-b80f935c60fe"></div> 
+</section>
 
 <app-footer></app-footer>

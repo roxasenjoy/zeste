@@ -52,3 +52,29 @@ body .slick-next {
     background: grey !important;
     z-index: 100;
 }
+
+.eapps-link::before{
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: -35px;
+    z-index: 5;
+    background-color: white;
+}
+
+.eapps-link::after{
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -35px;
+    z-index: 5;
+    background-color: white;
+}
+
+.eapps-link{
+    content: "";
+}

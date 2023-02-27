@@ -9,22 +9,19 @@ import * as $ from 'jquery';
 })
 export class PrestationsComponent implements OnInit {
 
-
   reviewPage:number = 0;
 
   background = "linear-gradient(to bottom,rgba(0,0,0, 0.3),rgba(0,0,0, .3)),url('/assets/img/prestation.jpg')";
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   right(){
     this.reviewPage++;
 
     if(this.reviewPage >= 2){
-      this.reviewPage = 1;
+      this.reviewPage = 0;
     }
   }
 

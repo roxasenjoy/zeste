@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { PrestationsComponent } from './prestations/prestations.component';
 import { LaTeteEtLesMainsComponent } from './la-tete-et-les-mains/la-tete-et-les-mains.component';
 import { FooterComponent } from './footer/footer.component';
+import "@ptkdev/webcomponent-instagram-widget";
 
 
 @NgModule({

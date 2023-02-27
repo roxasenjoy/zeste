@@ -8,12 +8,12 @@ import { PrestationsComponent } from './prestations/prestations.component';
 const routes: Routes = [
   { path: '', component: HomeComponent}, // Permet la connexion / Inscription de l'utilisateur
   { path: 'prestations', component: PrestationsComponent}, // Permet la connexion / Inscription de l'utilisateur
-  { path: 'la-tete-et-les-mains', component: LaTeteEtLesMainsComponent}, // Permet la connexion / Inscription de l'utilisateur
+  { path: 'lateteetlesmains', component: LaTeteEtLesMainsComponent}, // Permet la connexion / Inscription de l'utilisateur
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   exports: [RouterModule]
 })
