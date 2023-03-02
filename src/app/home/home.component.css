@@ -48,6 +48,9 @@
 .description .bottomRight{
     text-align: right;
     margin-top: 20px;
+    font-size: 30px;
+    font-family: var(--sue);
+    font-weight: 400;
 }
 
 .description i{
@@ -109,20 +112,21 @@
 }
 
 .valeurs .element img{
-    width: 200px;
+    width: 300px;
     object-fit:cover;
+    position: absolute;
+    z-index: 5;
 }
 
-.valeurs .element:nth-child(2) img{
-    transform: rotate(-45deg);
-    width: 150px;
-    padding-bottom: 60px;
+.valeurs .element:nth-child(1) img{
+    transform: rotate(-25deg);
+    opacity: 0.25;
 }
 
 .valeurs .element:nth-child(3) img
 {
-    transform: rotate(-45deg);
-    width:100px;
+    transform: rotate(25deg);
+    opacity: 0.25;
     object-fit:cover;
 }
 
@@ -170,7 +174,7 @@
         to bottom,
         rgba(0,0,0, 0.3),
         rgba(0,0,0, .3)
-      ),url('/assets/img/prestations/right.jpg'); 
+      ),url('/assets/img/prestations/prestation-prive.jpg'); 
     background-size: cover;
     height: 700px;
 }
@@ -182,7 +186,7 @@
         to bottom,
         rgba(0,0,0, 0.3),
         rgba(0,0,0, .3)
-      ), url('/assets/img/prestations/left.JPG');   
+      ), url('/assets/img/prestations/prestation-pro.jpg');   
     background-size: cover;
     height: 700px;
 }
@@ -205,7 +209,7 @@
 
 .listElement li{
     margin: 0 20px;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .discover{
@@ -311,9 +315,25 @@
     flex-direction: column;
 }
 
-.map img{
-    margin-bottom: 25px;
+
+.map .container-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.map .container-img img{
+    margin-bottom: 25px;
+    margin: 0 100px;
+}
+
+.map .container-img img:nth-child(2){
+    width: 25%;
+    border: white solid 2px ;
+}
+
+
 
 .socialMedia{
     display: flex;
@@ -444,6 +464,13 @@
     .map{
         flex: 0 0 100%;
     }
+
+    .map .container-img img{
+        margin: 0 25px;
+    }
+
+    
+
     .place{
         flex: 0 0 100%;
     }
@@ -486,12 +513,29 @@
         width: 100%;
     }
 
+    .map .container-img img{
+        margin-bottom: 25px;
+        margin: 25px 0px;
+    }
+
+    .map .container-img{
+        flex-direction: column;
+    }
+
+    .map .container-img img:nth-child(2){
+        width: 55%;
+    }
+
    
 }
 
 @media all and (max-width: 900px) {
     .valeurs{
         width: 75%;
+    }
+
+    .valeurs .element img{
+        width: 0;
     }
 }
 
@@ -517,6 +561,10 @@
     }
 
     .map img{
+        width: 75%;
+    }
+
+    .map .container-img img:nth-child(2){
         width: 75%;
     }
 
