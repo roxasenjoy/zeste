@@ -10,14 +10,17 @@
 <section class="presentation transition">
     <img id="profilImg" src="assets/img/manon.jpg" alt="Photo de Manon THOMINES MORA">
     <div class="description">
+        <i class="fa-solid fa-quote-left topLeft"></i>
         <br>
-        <p>"Cuisiner au rythme des saisons avec des produits normands est en même temps une contrainte 
+        <p>Cuisiner au rythme des saisons avec des produits normands est en même temps une contrainte 
             et un grand plaisir qui agite ma créativité. J’aime éveiller la curiosité et faire plaisir avec
              une cuisine qui régale tous les sens, gourmande, créative et colorée et qui respecte le vivant 
-             et l’environnement"
+             et l’environnement
             
-            </p>
-        <p class=" bottomRight">Manon</p>
+        </p>
+        <p class="bottomRightText">Manon</p>
+        <i class="fa-solid fa-quote-right bottomRight"></i>
+
     </div>
 </section>
 
@@ -58,14 +61,16 @@
             <li>BRUNCH</li>
         </ul>
 
-        <a routerLink="/prestations" class="discover transition"> Découvrir </a>
+        <!-- <a href="../prestations#prestationPrivee" class="discover transition"> Découvrir </a> -->
+        <a routerLink="prestations" fragment="prestationPrivee" class="discover transition"> Découvrir </a>
     </div>
 
     
     <div class="right element">
         <img src="assets/img/prestations/feuillage vertical.png" alt="Feuillage vertical de séparation" class="feuillageVertical">
 
-        <p class="transition">Prestations <br>professionnelles</p>
+        <!-- <p class="transition">Prestations <br>professionnelles</p> -->
+        <p class="transition">Prestations <br>professionnelles</p> 
 
         
         <ul class="listElement transition">
@@ -74,7 +79,7 @@
             <li>COCKTAIL</li>
         </ul>
 
-        <a routerLink="/prestations" class="discover transition"> Découvrir </a>
+        <a routerLink="prestations" fragment="prestationPro" class="discover transition"> Découvrir </a>
     </div>
 
 </section>
@@ -162,7 +167,7 @@
 
     </div>
 
-    <div class="arrowRight" id="arrowRight">
+    <div class="arrowRight" id="arrowRight"  id="contact">
         <i class="fa-solid fa-chevron-right" (click)="right()"></i>
     </div>   
 </div>
@@ -187,7 +192,7 @@
                     <a href="https://www.instagram.com/zestecuisine/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.facebook.com/zestecuisine" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 </div>
-                <div class="contact">
+                <div class="contact" >
                     <p>contact@zestecuisine.fr</p>
                     <p> 06 03 77 94 32 </p>
                 </div>

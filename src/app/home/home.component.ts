@@ -11,9 +11,19 @@ export class HomeComponent implements OnInit {
 
   reviewPage = 0;
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit(): void { }
+    
+
+   }
+
+  ngOnInit(): void {
+    // Récupération de la balise <a> avec la classe 'mon-lien'
+    const lien = document.getElementsByClassName('eapps-link')[0] as HTMLAnchorElement;
+        
+    // Modification de l'attribut href
+    lien?.setAttribute('href', '');
+   }
 
   right(){
     this.reviewPage++;

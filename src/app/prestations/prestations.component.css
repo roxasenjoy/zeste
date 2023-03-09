@@ -145,14 +145,10 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 10px;
-
 }
 
 .yellow{
   color: #F1C644;
-}
-
-.white{
 }
 
 .carousel .element .name p{
@@ -232,6 +228,11 @@
         flex-direction: column;
     }
 
+    .message{
+      font-size: 18px;
+      margin-bottom: 40px;
+  }
+
     .separation{
         flex-direction: column-reverse;
     }
@@ -281,7 +282,7 @@
     }
     
     .containerItem .item img{
-        height: 50px;
+        height: 100px;
         margin-bottom: 15px;
     }
 

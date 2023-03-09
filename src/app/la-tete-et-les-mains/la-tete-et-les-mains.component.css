@@ -104,6 +104,7 @@
     font-family: var(--ralewayRegu);
     line-height: 150%;
     letter-spacing: 1px;
+    text-align: justify;
 }
 
 .valeurList img{
