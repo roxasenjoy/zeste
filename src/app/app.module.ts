@@ -9,6 +9,8 @@ import { PrestationsComponent } from './prestations/prestations.component';
 import { LaTeteEtLesMainsComponent } from './la-tete-et-les-mains/la-tete-et-les-mains.component';
 import { FooterComponent } from './footer/footer.component';
 import "@ptkdev/webcomponent-instagram-widget";
+import { CgvComponent } from './cgv/cgv.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import "@ptkdev/webcomponent-instagram-widget";
     HeaderComponent,
     PrestationsComponent,
     LaTeteEtLesMainsComponent,
-    FooterComponent
+    FooterComponent,
+    CgvComponent,
+    MentionsLegalesComponent
   ],
   imports: [
     BrowserModule,

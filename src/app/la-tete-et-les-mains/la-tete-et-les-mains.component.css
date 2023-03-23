@@ -5,11 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
-
-.prestaPrivate .text{
-    flex: 0 0 70%;
-    text-align: left;
+    
 }
 
 .prestaPrivate .image{
@@ -47,11 +43,12 @@
 }
 
 .prestaPrivate .text{
-    text-align: left;
     line-height: 200%;
     color: var(--darkGreen);
     letter-spacing: 1px;
     font-size: 24px;
+    flex: 0 0 70%;
+    text-align: justify;
 }
 
 .prestaPrivate .text p{
@@ -199,6 +196,20 @@ Deco
 .footer a{
     color: var(--darkGreen);
    
+}
+
+.footer .linksLegal{
+    background: white;
+    color: var(--darkGreen);
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .linksLegal a {
+    font-size: 26px;
+    color: var(--darkGreen);
+    text-decoration: none;
+    margin: 0 25px;
 }
 
 @media all and (max-width: 900px) {
